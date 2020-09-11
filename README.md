@@ -23,5 +23,4 @@ Web: index.html
 ***
 Email: sofiya.novozhilova@gmail.com
 ***
-Telefon:+7(906)528-44-36
-
+Telephone:+7(906)528-44-**
