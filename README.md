@@ -19,6 +19,9 @@ Author:
 
 Contact:
 =======================================================================
-*Web: file:///C:/Users/Sofiya/Desktop/%D0%9B%D0%B0%D0%B11/index.html
-*Email: sofiya.novozhilova@gmail.com
-*Telefon:+7(906)528-44-36
+Web: index.html
+***
+Email: sofiya.novozhilova@gmail.com
+***
+Telefon:+7(906)528-44-36
+
