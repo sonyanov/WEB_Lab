@@ -6,7 +6,7 @@ padding: 0;
 body { 
 font: 16px Helvetica, Sans-Serif; 
 line-height: 24px; 
-background: url(images/noise.jpg); 
+background: url(noise.jpg); 
 }
 
 .clear { 
@@ -30,23 +30,6 @@ font-size: 42px;
 font-weight: bold; 
 letter-spacing: -2px; 
 border-bottom: 1px solid #999; 
-}
-
-h2 { 
-font-size: 20px; 
-margin: 0 0 6px 0; 
-position: relative; 
-}
-
-h2 span { 
-position: absolute; 
-bottom: 0; 
-right: 0; 
-font-style: italic; 
-font-family: Georgia, Serif; 
-font-size: 16px; 
-color: #999; \
-font-weight: normal; 
 }
 
 p { 
@@ -98,6 +81,3 @@ float: none;
 margin: 0; 
 height: 15px; 
 }
-time {
-	datetime: 2000-07-11;
-	}
