@@ -6,7 +6,7 @@ body{
 	font-style: 24px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4{
 	padding: 0;
 	margin: 0;
 	text-transform: uppercase;
@@ -167,5 +167,17 @@ text-align: center;
 
 .footer{
 	background: #000000;
-	height: 200px;
+	height: 180px;
+}
+
+.footer i{
+	color: white;
+	font-size: 40px;
+	padding-right: 80px;
+	padding-left: 80px;
+	margin-top: 70px;
+}
+
+.icon{
+	text-align: center;
 }
