@@ -178,6 +178,11 @@ text-align: center;
 	margin-top: 70px;
 }
 
+.footer p{
+	color: white;
+	text-align: center;
+}
+
 .icon{
 	text-align: center;
 }
