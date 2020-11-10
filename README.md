@@ -3,7 +3,7 @@ Responsive HTML5 website template for developers
 
 Theme name:
 =======================================================================
-Summary
+https://sonyanov.github.io/WEB_Lab/
 
 Theme version:
 =======================================================================
