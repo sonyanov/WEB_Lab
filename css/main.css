@@ -281,3 +281,45 @@ z-index: 2;
 	width: 100%;
 	height: 100%;
 }
+
+.foto_full{
+	width: 800px;
+	height: 440px;
+	overflow: auto;
+	margin-top: 60px; 
+	left: 200px;
+	text-align: center;
+	background: #000000;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	border-radius: 7px;	
+	padding-top: 22px;
+}
+
+.foto_full .close{
+	right: 190px;
+}
+
+.tags{
+	height: 80%;
+	width: 30%;
+	color: white;
+	overflow: auto;
+	margin-top: 60px; 
+	left: 400px;
+	font-size: 14px;
+	background: #000000;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	border-radius: 7px;
+	font-family: 'Capriola', sans-serif;
+	padding-left: 20px;
+	padding-top: 20px;	
+}
+
+.tags .close{
+	right: 460px;
+}
+

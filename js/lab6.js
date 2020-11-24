@@ -1,13 +1,11 @@
-var info = document.getElementById('info'),
-	open = document.getElementById('open'),
-	close = document.querySelector('.close')
-
-open.onclick = function() {
-	info.style.display = "block"
+function openid(id){
+	var openid = document.getElementById(id)
+	openid.style.display = "block"
 }
 
-close.onclick = function() {
-	info.style.display = "none"
+function closeid(id){
+	var closeid = document.getElementById(id)
+	closeid.style.display = "none"
 }
 
 var slides = document.querySelectorAll('#slides .slide');
@@ -19,3 +17,4 @@ function nextSlide() {
  currentSlide = (currentSlide+1)%slides.length;
  slides[currentSlide].className = 'slide showing';
 }
+

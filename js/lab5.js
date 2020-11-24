@@ -32,9 +32,9 @@ function swap(array, first, second){
 function partition(array, left, right) {
     var pivot = array[Math.floor((right + left) / 2)]
     while (left <= right) {
-        while (array[left] < pivot)
+        while (array[left] > pivot)
             left++
-        while (array[right] > pivot)
+        while (array[right] < pivot)
             right--
         if (left <= right) {
             swap(array, left, right)
@@ -57,21 +57,38 @@ function quickSort(array, left, right) {
     return array
 }
 
-function count_tag() {
+function count_tag(tags) {
 	var tags = {}
 	for (const tag of document.getElementsByTagName('*')) {
 		if (tag.tagName in tags)
 			tags[tag.tagName] += 1
 		else tags[tag.tagName] = 1
 	}
-	
-
 	return tags
 }
+
+function sort_tag(){
+	var count = count_tag()
+
+	var tags = Object.keys(count).map(function(key){
+		return [key, count[key]]
+	})
+
+	tags.sort(function(a, b){
+		return b[1] - a[1]
+	})
+
+	tags.forEach(pair =>{
+		document.getElementById("list_tags").innerHTML += pair[0] + ": " + pair[1] + "<br>"
+	})	
+}
+
+sort_tag()
+
 
 array = random_array(1000)
 console.log("Array: ", array)
 console.log("Values: ", values(array))
 array_to_sort = random_array(10)
 console.log("Sort array: " , quickSort(array_to_sort, 0, array_to_sort.length - 1))
-console.log(count_tag())
+tags = count_tag()

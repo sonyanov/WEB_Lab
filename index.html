@@ -10,11 +10,19 @@
 </head>
 <body>
 	<div id="info" class="info">
-		<div><span class="close">&times;</span></div>
+		<div><span class='close' onclick="closeid('info')">&times;</span></div>
 			<a href="https://vk.com/novsonya"><i class="fab fa-vk"></i></a>
 			<a href="https://www.instagram.com/sonya_nov_/"><i class="fab fa-instagram"></i></a>
 			<a href="https://t.me/sofiya_nov"><i class="fas fa-paper-plane"></i></a>
 		<p>sofiya.novozhilova@gmail.com</p>
+	</div>
+	<div class="tags" id="tags">
+		<div><span class='close' onclick="closeid('tags')">&times;</span></div>
+		<div id="list_tags"></div>
+	</div>
+	<div id="foto_full" class="foto_full">
+		<div><span class='close' onclick="closeid('foto_full')">&times;</span></div>
+		<img src="img/about.jpg" alt="about">
 	</div>
 	<header id="header" class="header">
 		<div class="container">
@@ -50,7 +58,8 @@
 				Новожилова<br>София
 			</h1>
 			<p>Начинающий разработчик</p>
-			<button id="open" class="open">Contacts</button>
+			<button onclick="openid('info');">Contacts</button>
+			<button onclick="openid('tags');">Tags</button>
 		</div>
 	</header>
 	<section id="about" class="about">
@@ -64,7 +73,7 @@
 						Университета ИТМО</p>
 				</div>
 				<div class="foto">
-					<img src="img/about.jpg" alt="about">
+					<img onclick="openid('foto_full');" src="img/about.jpg" alt="about">
 				</div>
 		</div>
 	</section>
