@@ -248,6 +248,10 @@ button:focus {
   outline: none;
 }
 
+.foto_gallery{
+	z-index: 5;	
+}
+
 #slides{
 position: relative;
 height: 400px;
@@ -264,7 +268,7 @@ top: 0px;
 width: 100%;
 height: 100%;
 opacity: 0;
-z-index: 10;
+z-index: 3;
 
 -webkit-transition: opacity 1s;
 -moz-transition: opacity 1s;
@@ -292,7 +296,7 @@ z-index: 2;
 	background: #000000;
 	position: fixed;
 	display: none;
-	z-index: 1;
+	z-index: 15;
 	border-radius: 7px;	
 	padding-top: 22px;
 }
@@ -312,7 +316,7 @@ z-index: 2;
 	background: #000000;
 	position: fixed;
 	display: none;
-	z-index: 1;
+	z-index: 15;
 	border-radius: 7px;
 	font-family: 'Capriola', sans-serif;
 	padding-left: 20px;
@@ -322,4 +326,165 @@ z-index: 2;
 .tags .close{
 	right: 460px;
 }
+
+.open-button {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  z-index: 15;
+}
+
+/* Всплывающий чат - скрыт по умолчанию */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 20;
+}
+
+/* Добавление стилей в контейнер формы */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+/* Установите стиль для кнопки отправить/кнопка */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавьте красный цвет фона к кнопке отмена */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Добавьте некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-container input{
+	margin-bottom: 15px;
+	width: 300px;
+}
+
+.chat{
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.chat_txt{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat_window{
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    width: 278px;
+    height: 200px;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+
+    margin-bottom: 10px;
+}
+
+.chat_interface{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.msg_send{
+    margin-bottom: 10px;
+}
+
+.info_msg{
+    display: flex;
+    margin-left: 0 10px;
+    margin-bottom: 10px;
+}
+
+.info_msg i{
+	margin-left: 10px;
+	align-items: end;
+}
+
+.msg_who{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.msg{
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.msg_send p {
+	margin: 0;
+}
+
+.msg_txt{
+    margin-right: 10px;
+}
+
+.youth_msg .msg{
+    margin-left: 30%;
+}
+
+.youth_msg .info_msg{
+    justify-content: flex-end;
+}
+
+.answer_msg .msg{
+    margin-right: 30%;
+}
+
+.fas-close:hover{
+    cursor: pointer;
+    color: tomato;
+}
+
+/* Template */
+.templ_stats{
+   
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 5px;
+}
+
+.tag_info{
+    font-weight: bold;
+}
+
 

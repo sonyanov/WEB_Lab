@@ -154,8 +154,32 @@
 			<a href="https://t.me/sofiya_nov"><i class="fas fa-paper-plane"></i></a>
 		</div>
 		<p>sofiya.novozhilova@gmail.com</p>
+		<button class="open-button" onclick="openForm()">Чат
 	</footer>
+	<section class="chat-popup" id="myForm">
+		<form  class="form-container">
+		    <label for="msg"><b>Чат</b></label>
+		    <div class="chat_window" id="chat">
+                <template class="msg" id="msg_tmpl">
+                    <div class="msg_send">
+                        <div class="info_msg">
+                            <p class="msg_who"></p>
+                            <i class="fas fa-times fas-close"></i>
+                        </div>
+                    	<div class="msg">
+                        	<p class="msg_txt"></p>
+                    	</div>
+                	</div>
+                </template>
+            </div>
+		    <input type="text" name="" id="chat_input" placeholder="text">
+		    <button type="button" id="chat_btn" class="btn">Отправить</button>
+		    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+		</form>
+	</section>
+	<script type="text/javascript" src=" https://code.jquery.com/jquery-1.11.2.js "></script>
 	<script src="js/lab5.js"></script>
 	<script src="js/lab6.js"></script>
+	<script src="js/lab7.js"></script>
 </body>
 </html>

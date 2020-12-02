@@ -18,3 +18,11 @@ function nextSlide() {
  slides[currentSlide].className = 'slide showing';
 }
 
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
