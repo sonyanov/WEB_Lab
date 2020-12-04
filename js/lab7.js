@@ -102,4 +102,4 @@ function send(text, sender, isYour){
 
 var first, second, third
 init_chat()
-send("Пообщайся со мной!", "Bot", false)
+send("Давай поболтаем)", "Bot", false)
