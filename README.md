@@ -1,4 +1,4 @@
-# WEB_Lab
+# WEB_Lab1-7
 Responsive HTML5 website template for developers
 
 Theme name:
